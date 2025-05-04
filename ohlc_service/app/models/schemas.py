@@ -13,3 +13,13 @@ class OHLCResponse(BaseModel):
 
     class Config:
         orm_mode = True
+
+class OHLCRequest(BaseModel):
+    symbol: str
+    interval: str
+    timestamp: datetime
+    open: float
+    high: float
+    low: float
+    close: float
+    volume: float = 0
