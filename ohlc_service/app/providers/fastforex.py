@@ -1,6 +1,6 @@
 import requests
 from app.providers.base import BaseProvider
-from app.config import settings
+from app.core.config import settings
 
 class FastForexProvider(BaseProvider):
     def fetch_ohlc(self, symbol, interval, limit=100):
